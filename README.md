@@ -2,6 +2,8 @@
 
 Plataforma web para visualizar tipos de cambio en tiempo real para Latinoamérica. Proyecto de prueba técnica para Lead Web Frontend en Global66.
 
+**Diseño Figma**: [Ver diseño completo](https://www.figma.com/design/iD1HUqC6GZfXXsekZzckQm/Global66?node-id=0-1&p=f)
+
 ## 🚀 Inicio Rápido
 
 ```bash
@@ -46,6 +48,7 @@ Abre [http://localhost:3000](http://localhost:3000) en tu navegador.
 ### Pasos
 
 1. **Clonar e instalar**
+
    ```bash
    git clone <repository-url>
    cd global66-nuxt
@@ -53,12 +56,14 @@ Abre [http://localhost:3000](http://localhost:3000) en tu navegador.
    ```
 
 2. **Configurar variables de entorno** (Opcional)
+
    ```bash
    cp .env.example .env
    # Editar .env con tus credenciales de Google Sheets
    ```
 
 3. **Iniciar desarrollo**
+
    ```bash
    npm run dev
    ```
@@ -145,15 +150,18 @@ npm run generate         # Genera sitio estático
 Obtiene tipos de cambio actuales.
 
 **Query Parameters:**
+
 - `base` (opcional, default: `USD`) - Moneda base
 - `target` (opcional) - Moneda objetivo específica
 
 **Ejemplo:**
+
 ```bash
 curl "http://localhost:3000/api/rates?base=USD&target=CLP"
 ```
 
 **Response:**
+
 ```json
 {
   "base": "USD",
@@ -174,6 +182,7 @@ curl "http://localhost:3000/api/rates?base=USD&target=CLP"
 Registra suscripciones de usuarios.
 
 **Body:**
+
 ```json
 {
   "name": "Juan Pérez",
@@ -183,6 +192,7 @@ Registra suscripciones de usuarios.
 ```
 
 **Response:**
+
 ```json
 {
   "success": true,
@@ -201,6 +211,7 @@ Registra suscripciones de usuarios.
 Health check del servidor.
 
 **Response:**
+
 ```json
 {
   "status": "ok",
@@ -250,6 +261,7 @@ npm test
 ```
 
 **Cobertura:**
+
 - ✅ **164 tests pasando** al 100%
 - ✅ API endpoints (41 tests)
 - ✅ Componentes de layout (44 tests)
@@ -257,6 +269,7 @@ npm test
 - ✅ Pages y layouts (20 tests)
 
 **Stack de testing:**
+
 - Vitest 2.1.9
 - @vue/test-utils
 - happy-dom (environment)
@@ -266,6 +279,7 @@ npm test
 ### Configuración
 
 1. **Copiar ejemplo de variables**
+
    ```bash
    cp .env.example .env
    ```
